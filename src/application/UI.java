@@ -78,7 +78,7 @@ public class UI {
 			}
 			System.out.println();
 		}
-		System.out.println("  abcdefgh");
+		System.out.println("  a b c d e f g h");
 	}
 	
 
@@ -90,20 +90,13 @@ public class UI {
 			}
 			System.out.println();
 		}
-		System.out.println("  abcdefgh");
+		System.out.println("  a b c d e f g h");
 	}
 
 	private static void printPiece(ChessPiece piece, boolean background) {
 		if(background) {
 			System.out.println(ANSI_BLUE_BACKGROUND);
 		}
-		if (piece == null) {
-			System.out.print("-");
-		} 
-		else {
-			System.out.print(piece);
-		}
-		System.out.print(" ");
 		if (piece == null) {
 			System.out.print("-" + ANSI_RESET);
 		} 
